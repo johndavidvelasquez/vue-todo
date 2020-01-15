@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    <Home/>
+    <NavBar/>
+    <div class="container">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import NavBar from './components/NavBar.vue'
+
+import '../node_modules/materialize-css/dist/css/materialize.min.css';
+import '../node_modules/materialize-css/dist/js/materialize.min.js';
 
 export default {
   name: 'app',
   components: {
-    Home
+    NavBar
   }
 }
 </script>
